@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './_variables.scss';
+
+body {
+  background-color: $mainColor;
+  box-sizing: border-box;
+}
+
+* {
+  color: white;
+}
+
+.login-card,
+.register-card {
+  border-radius: 10px;
+  background-color: $secondColor;
+  padding: 40px;
+  width: 500px;
+}
+
+.v-overlay.v-overlay--active.v-dialog {
+  backdrop-filter: blur(10px)
+}
